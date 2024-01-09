@@ -5,9 +5,9 @@ const Expertise = () => {
      <h1 className="text-4xl font-bold text-center mt-20"> Our Experties</h1>
     <div className=" flex flex-col items-center  mt-10  ">
         {
-            expertise.map((item)=>{
+            expertise.map((item,index)=>{
                 return (
-                    <div className="flex  ">
+                    <div className="flex  " key={index}>
                         <div className="flex flex-col justify-center  m-2 p-4 rounded ">
                             <div className="flex flex-col items-center  justify-center lg:mb-10 ">
                              <i className="text-4xl lg:p-4  mr-4 text-purple-400  ">{item.icons}</i>
