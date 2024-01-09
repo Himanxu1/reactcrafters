@@ -9,8 +9,8 @@ const ChooseSection = () => {
         {
             whyChooseUs.map((item,index)=>{
                 return (
-                    <div>
-                     <ChooseCard item={item} key={index} />    
+                    <div key={index}>
+                     <ChooseCard item={item}  />    
                     </div>
                 )
             })
